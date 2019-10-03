@@ -62,3 +62,74 @@ h1, h2, h3, h4, h5 {
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Viga&display=swap');
+
+/* HEADER */
+/* .wrapper {
+	
+	margin: 0 auto;
+} */
+* body {
+    max-width: 880px;
+	margin: 0 auto;
+}
+
+.header {
+	/* background-color: cornsilk; */
+	width: 100%;
+	padding-bottom: 5px;
+}
+
+nav {
+	color: grey;
+	display: flex;
+}
+
+nav a {
+	text-decoration: none;
+	padding: 20px 35px 10px 5px;
+	color: rgb(88, 87, 87);
+	margin-bottom: 5px;
+	font-size: 14px;
+}
+
+.logo {
+	padding-top: 5px;
+	padding-bottom: 0;
+	padding-left: 115px;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h3 {
+	font-family: 'Viga', sans-serif;
+	font-size: 22px;
+}
+
+h6 {
+    font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 12px;
+}
+
+p {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.one, .two, .three, .four, .five, .six {
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    border: 1px solid black;
+    padding: 5px 10px 0;
+}
