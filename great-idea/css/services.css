@@ -63,23 +63,22 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Viga&display=swap');
 
 /* HEADER */
-.wrapper {
-	max-width: 876px;
+/* .wrapper {
+	
+	margin: 0 auto;
+} */
+* body {
+    max-width: 880px;
 	margin: 0 auto;
 }
-/* body {
-	width: 0 auto;
-} */
 
 .header {
-	background-color: cornsilk;
+	/* background-color: cornsilk; */
 	width: 100%;
-	padding-bottom: 25px;
+	padding-bottom: 5px;
 }
 
 nav {
@@ -89,86 +88,99 @@ nav {
 
 nav a {
 	text-decoration: none;
-	padding: 1px 15px;
+	padding: 20px 48px 10px 5px;
 	color: rgb(88, 87, 87);
-	margin-bottom: 50px;
+	margin-bottom: 5px;
 	font-size: 14px;
 }
 
 .logo {
-	padding-top: 25px;
+	padding-top: 5px;
 	padding-bottom: 0;
-	padding-left: 125px;
+	padding-left: 115px;
 }
 
-.intro {
-	margin-top: 25px;
-	/* width: 100%; */
-	
-}
-
-.hero-text {
-	width: 50%;
-	/* padding: 30px; */
-	text-align: center;
-	margin: 40px;
-}
-
-.hero-image {
-	/* width: 50%; */
-	margin: 25px 0 25px 80px;
-	
-	
+hr {
+    margin: 25px 0;
 }
 
 h1 {
 	font-size: 48px;
 }
 
+h3 {
+	font-family: 'Viga', sans-serif;
+    font-size: 22px;
+    padding-top: 10px;
+}
+
 p {
 	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 14px;
-	line-height: 20px;
+	line-height: 18px;
 }
 
-h3 {
-	font-family: 'Viga', sans-serif;
-	font-size: 22px;
+.hero h1 {
+    padding: 15px 0 0 0;
 }
 
-.full-width {
-	width: 100%;
-	display: flex;
+.hero p {
+    font-size: 12px;
 }
 
-.half-width {
-	/* display: inline-block; */
-	width: 45%;
-	padding-bottom: 10px;
-	margin: 15px;
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 5px 0;
 }
 
-.third-width {
-	/* display: inline-block; */
-	width: 30%;
-	margin: 5px;
-	padding: 15px 1px;
+.one, .two, .three, .four, .five, .six {
+    background-color: rgb(228, 227, 227);
+    justify-content: space-around;
+    width: 48%;
+    height: 217px;
+    border: 0.5px solid black;
+    padding: 5px 15px;
+    margin: 15px 15px 15px 0;
 }
 
-h6 {
+button {
+    background-color: white;
+    padding: 5px 25px;
+    font-size: 11px; 
+    margin: 10px 0;
+}
+
+.about {
+    display: flex;
+}
+
+div.intro, .services-info-img {
+    flex-direction: column;
+    /* width: 45%; */
+}
+
+div.intro p {
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.services-info-img {
+    align-self: stretch;
+}
+
+ul li {
+   list-style-type: disc; 
+   margin-left: 5px;
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-size: 12px;
+   line-height: 35px;
+}
+
+footer h4 {
+    font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 12px;
-	text-align: center;
-	margin: 20px;
-}
-
-footer {
-	padding-top: 15px;
-}
-
-footer p {
-	font-size: 14px;
-}
-
-span {
-	font-size: 12px;
+    text-align: center;
+    padding: 30px 0 15px 0;
 }
